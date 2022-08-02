@@ -17,7 +17,6 @@ def run_calculator():
         fahrenheit = get_input()
         if fahrenheit == "exit":
             break
-        fahrenheit = float(fahrenheit)
         print(f"섭씨온도 : {fahrenheit:.2f}")
         print(f"화씨온도 : {convert_fahrenheit(fahrenheit):.2f}")
 
