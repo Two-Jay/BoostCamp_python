@@ -1,9 +1,22 @@
-import sys
-sys.path.append("/Users/kimjeongjun/BoostCamp_python/data_structure")
-import stack
+# import sys
+# sys.path.append("/Users/kimjeongjun/BoostCamp_python/data_structure")
+# import stack
+
+class my_stack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, data):
+        self.stack.append(data)
+    
+    def pop(self):
+        return self.stack.pop() if len(self.stack) > 0 else None
+    
+    def peek(self):
+        return self.stack[-1] if len(self.stack) > 0 else None
 
 def reverse_str(str) -> str:
-    st = stack.my_stack()
+    st = my_stack()
     for c in str: st.push(c)
     reversed_str = ""
     while st.peek(): reversed_str += st.pop()

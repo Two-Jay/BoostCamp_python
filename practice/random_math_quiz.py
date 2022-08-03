@@ -4,7 +4,7 @@ def set_answer(fr, to): return rand.randint(fr, to)
 
 def ask_answer(answer):
     while True:
-        guess = input("숫자를 입력하세요: ")
+        guess = input("숫자를 입력하세요: (종료 : 'exit')")
         if guess == "exit": break
         guess = int(guess)
         if guess == answer: return print("정답입니다.")

@@ -4,7 +4,7 @@ def print_banner():
     print("본 프로그램은 섭씨온도를 화씨온도로 변환하는 프로그램입니다.")
 
 def get_input():
-    fahrenheit = input("섭씨온도를 입력하세요: ")
+    fahrenheit = input("섭씨온도를 입력하세요: (종료 : 'exit')")
     if fahrenheit == "exit":
         return "exit"
     return float(fahrenheit)
