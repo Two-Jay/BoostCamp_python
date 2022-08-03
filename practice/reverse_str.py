@@ -1,5 +1,5 @@
 # import sys
-# sys.path.append("/Users/kimjeongjun/BoostCamp_python/data_structure")
+# sys.path.append("/Users/kimjeongjun/BoostCamp_python/classes")
 # import stack
 
 class my_stack:
