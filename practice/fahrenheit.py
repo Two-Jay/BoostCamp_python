@@ -13,6 +13,7 @@ def convert_fahrenheit(fahrenheit):
     return (9 / 5) * fahrenheit + 32
 
 def run_calculator():
+    print_banner()
     while True:
         fahrenheit = get_input()
         if fahrenheit == "exit":
@@ -20,5 +21,4 @@ def run_calculator():
         print(f"섭씨온도 : {fahrenheit:.2f}")
         print(f"화씨온도 : {convert_fahrenheit(fahrenheit):.2f}")
 
-print_banner()
 run_calculator()
